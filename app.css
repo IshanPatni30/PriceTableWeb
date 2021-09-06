@@ -1,0 +1,98 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+ul{
+	list-style-type: none;
+	padding:0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+html{
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+}
+h2{
+	margin-bottom: 0px;
+}
+body{
+  background-color: #3DB2FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.panel{
+
+background-color: white;
+border-radius: 10px;
+padding:15px 25px;
+width:100%;
+max-width:960px;
+display: flex;
+flex-direction: column;
+text-align: center;
+text-transform: uppercase;
+}
+.pricing-plan{
+	border-bottom: 1px solid #e1f1ff;
+}
+.pricing-panel:last-child{
+	border-bottom: none;
+}
+.pricing-img{
+	margin-bottom: 25px;
+
+	max-width: 100%;
+}
+.pricing-header{
+	color: #8888;
+	font-weight: 600;
+	letter-spacing: 1px;
+
+}
+
+.pricing-features{
+	margin:50px 0 25px;
+	color: #016ff9;
+	font-weight: bold;
+}
+.pricing-features-item{
+	font-weight: 600;
+	letter-spacing: 1px;
+font-size: 12px;
+line-height: 1.5;
+padding:15px 0;
+border-top: 1px solid #e1f1ff;
+}
+.pricing-features-item:last-child{
+	border-bottom: 1px solid #e1f1ff;
+
+}
+.pricing-price{
+	color: #016ff9;
+	font-size: 32px;
+	font-weigth:700;
+	display: block;
+
+}
+.pricing-button{
+	border:1px solid #9dd1ff;
+	border-radius: 10px;
+	color: #348efe;
+	display: inline-block;
+	padding:15px 35px 15px 35px;
+	text-decoration: none;
+	margin:25px 0;
+}
+.pricing-button:hover, .pricing-button:focus{
+	background-color: #e1f1ff;
+
+}
+@media (min-width:900px) {
+	.panel{
+		flex-direction: row;
+	}
+
+}
